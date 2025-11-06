@@ -31,4 +31,10 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # 4️⃣ Copy frontend static files
 COPY code /usr/share/nginx/html/
 
+# 5️⃣ Expose port 80
+EXPOSE 80
+
+# 6️⃣ Start Nginx server
+CMD ["nginx", "-g", "daemon off;"]
+
 
