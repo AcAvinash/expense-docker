@@ -6,7 +6,7 @@ RUN rm -rf /usr/share/nginx/html/* \
     && rm -rf /etc/nginx/conf.d/default.conf
 
 # 3️⃣ Copy custom Nginx config
-COPY expense.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # 4️⃣ Copy frontend static files
 COPY code /usr/share/nginx/html/
