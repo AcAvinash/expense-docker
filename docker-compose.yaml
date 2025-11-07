@@ -5,21 +5,21 @@ volumes:
     mysql:
 services:
   mysql:
-    image: mysql:v1
+    image: acavinash/mysql:v1
     container_name: mysql
     networks:
       - expense
     volumes:
     - mysql:/var/lib/mysql
   backend:
-    image: backend:v1
+    image: acavinash/backend:v1
     container_name: backend
     networks:
       - expense
     depends_on:
       - mysql
   frontend:
-    image: frontend:v1
+    image: acavinash/frontend:v1
     container_name: frontend
     ports:
       - "80:80"
