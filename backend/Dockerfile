@@ -4,7 +4,7 @@ FROM node:20
 WORKDIR /opt/server
 
 # Environment variable for DB connection
-ENV DB_HOST=mysql
+ENV DB_HOST="mysql"
 
 # Copy dependency files & install dependencies
 COPY package.json .
