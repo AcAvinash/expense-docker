@@ -1,5 +1,6 @@
 FROM node:20
-
+# Create application directory
+RUN mkdir /opt/server
 # Set working directory
 WORKDIR /opt/server
 
